@@ -13,10 +13,10 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"db:push": "drizzle-kit push",
-		"db:generate": "drizzle-kit generate",
+		"db:generate": "drizzle-kit generate ",
 		"db:migrate": "drizzle-kit migrate",
 		"db:studio": "drizzle-kit studio",
-		"auth:schema": "better-auth generate --config src/lib/server/auth.ts --output src/lib/server/db/auth.schema.ts --yes"
+		"auth:schema": "better-auth generate --config src/lib/server/auth.ts --output src/lib/server/db/schema/auth.schema.ts --yes"
 	},
 	"devDependencies": {
 		"@better-auth/cli": "~1.4.21",
@@ -43,5 +43,8 @@
 		"typescript": "^6.0.3",
 		"typescript-eslint": "^8.60.1",
 		"vite": "^8.0.16"
+	},
+	"dependencies": {
+		"zod": "^4.4.3"
 	}
 }
